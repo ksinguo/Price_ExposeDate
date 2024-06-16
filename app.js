@@ -33,7 +33,7 @@ app.engine('ejs',engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 //增加靜態檔案的路徑，之後如果要用到public靜態文件，路徑寫法是/js/all.js，如果沒有寫是沒辦法抓到public裡面的檔案
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')));
 
 // 增加 body 解析
 app.use(bodyParser.json());
