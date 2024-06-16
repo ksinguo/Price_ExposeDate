@@ -10,7 +10,7 @@ function startSearch() {
     alert('請輸入申報書序號');
   }
   else{
-    axios.get('http://127.0.0.1:30000/fetchData/' + inputCode)
+    axios.get('/fetchData/' + inputCode)
       .then(function (response) {
         const value = response.data.value;
         if(value == '5' || value == '2'){
