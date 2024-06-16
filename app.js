@@ -4,6 +4,7 @@ var app = express();
 var engine = require('ejs-locals');
 var bodyParser = require('body-parser');
 const path = require('path');
+const cors = require('cors'); // 引入 cors 中間件
 //載入firebase
 var admin = require("firebase-admin");
 //var serviceAccount = require("./test-352ee-firebase-adminsdk-jlepp-ba24cca1c6.json");
@@ -30,6 +31,10 @@ admin.initializeApp({
 
 app.engine('ejs',engine);
 //app.set('views','./views');
+// 設置 CORS 政策
+app.use(cors({
+  origin: 'https://ub-land-price.vercel.app'
+}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 //增加靜態檔案的路徑，之後如果要用到public靜態文件，路徑寫法是/js/all.js，如果沒有寫是沒辦法抓到public裡面的檔案
