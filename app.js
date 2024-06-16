@@ -32,9 +32,10 @@ admin.initializeApp({
 app.engine('ejs',engine);
 //app.set('views','./views');
 // 設置 CORS 政策
-app.use(cors({
-  origin: 'https://ub-land-price.vercel.app'
-}));
+// app.use(cors({
+//   origin: 'https://ub-land-price.vercel.app'
+// }));
+app.use(cors());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 //增加靜態檔案的路徑，之後如果要用到public靜態文件，路徑寫法是/js/all.js，如果沒有寫是沒辦法抓到public裡面的檔案
