@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document1</title>
+    <title>買賣實價登錄揭露期程查詢</title>
     <link rel="stylesheet" href="/css/all.css">
 
 </head>
@@ -13,7 +13,9 @@
     <button onclick="fetchData()">查詢</button> -->
     <div class="container">
         <header>
-            <h1>鳳林地政事務所買賣實價登錄揭露期程查詢</h1>
+            <img src="/image/fl.png">
+            <!-- <h1>鳳林地政事務所買賣實價登錄揭露期程查詢</h1> -->
+            <span class="title">鳳林地政事務所買賣實價登錄揭露期程查詢</span>
         </header>
         <main>
             <form>
@@ -26,7 +28,8 @@
                     <button type="button" onclick="resetAll()">清除</button>
                 </div>
             </form>
-            <table id="result">
+            <div class="table_container">
+                <table id="result">
                 <!-- <tr>
                     <th>申報書序號</th>
                     <th>揭露狀態</th>
@@ -36,11 +39,14 @@
                     <td>不揭露</td>
                 </tr> -->
             </table>
+        </div>
+            
+            <hr>
             <section class="notes">
                 <p>備註：</p>
                 <ol>
                     <li>資料期間：110年7月1日至今。</li>
-                    <li>若查詢結果為「交易價格未揭露」或「受理機關作業中」者，請洽 <a href="#">花蓮鳳林地政事務所</a> 詢問。</li>
+                    <li>若查詢結果為「交易價格未揭露」或「受理機關作業中」者，請洽 <a href="https://flland.hl.gov.tw/cp.aspx?n=260" target="_blank">花蓮縣鳳林地政事務所</a> 詢問。</li>
                     <li>本查詢系統資料以各地政事務所為準，本系統資料僅供參考。</li>
                 </ol>
             </section>

@@ -1,40 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: '微軟正黑體', '新細明體';
+    /* background-color: #f9f9f9; */
+    background-color:linear-gradient(#FFF,#f9f9f9);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
 }
 
 .container {
     width: 90%;
     max-width: 800px;
-    background-color: #fff;
+    background-color: #fdf6e9;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+
 }
 
 header {
-    background: linear-gradient(to bottom, #e0f7d4, #c8e6a6);
+    /* background: linear-gradient(to bottom, #e0f7d4, #c8e6a6); */
+    background:linear-gradient(#FFF,#e4f1c2);
     text-align: center;
     margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:8px;
+    height: 40px;
+    width: auto;
+}
+.title{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold
 }
 
-h1 {
-    font-size: 1.5em;
-    margin: 0;
+hr{
+    border: none;
+    border-top: 1px dashed #000; /* 虛線的顏色和寬度 */
+    margin: 30px 0; /* 上下邊距 */
 }
-
 .gov-department {
     color: #009;
     font-size: 0.9em;
     margin: 0;
 }
-
+.table_container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+   
+}
 form {
     display: flex;
     flex-direction: column;
