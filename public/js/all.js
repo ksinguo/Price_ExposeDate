@@ -27,7 +27,7 @@ function startSearch() {
           outputResult.innerHTML = str;
         }
         else{
-          alert('輸入的申報書序號找不到資料，請重新輸入');
+          alert('輸入的申報書序號有誤，請重新輸入');
           outputResult.innerHTML = str;
         }
       })
